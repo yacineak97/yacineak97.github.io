@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import './nav.css';
 
 import { AiOutlineHome } from 'react-icons/ai';
@@ -77,7 +77,7 @@ const Nav = () => {
 				<span className='nav-system-label'>// NAVIGATION_SYSTEM v2.0</span>
 
 				{NAV_ITEMS.map((item, index) => (
-					<>
+					<Fragment key={item.href}>
 						<a
 							key={item.href}
 							href={item.href}
@@ -95,7 +95,7 @@ const Nav = () => {
 						{index < NAV_ITEMS.length - 1 && (
 							<div key={`sep-${index}`} className='nav-separator' />
 						)}
-					</>
+					</Fragment>
 				))}
 			</nav>
 
