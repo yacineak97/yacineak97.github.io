@@ -1,0 +1,158 @@
+#skills {
+	font-family: 'Rajdhani', sans-serif;
+	color: var(--color-white);
+}
+
+#skills h5 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 10px;
+	color: var(--color-light);
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	margin-bottom: 0.4rem;
+}
+
+#skills h5::before {
+	content: '// ';
+}
+
+#skills h2 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 1.5rem;
+	color: var(--color-primary);
+	margin-bottom: 2rem;
+	letter-spacing: 0.05em;
+}
+
+.skills__container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+}
+
+.skills__container > div {
+	background: var(--color-bg-variant);
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 1.5rem 1.75rem;
+	position: relative;
+	transition: var(--transition);
+	overflow: hidden;
+}
+
+.skills__container > div::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3px;
+	height: 100%;
+	background: var(--color-primary);
+	opacity: 0;
+	transition: var(--transition);
+}
+
+.skills__container > div:hover {
+	background: transparent;
+	border-color: var(--color-primary-variant);
+	cursor: default;
+}
+
+.skills__container > div:hover::before {
+	opacity: 1;
+}
+
+.skills__container > div h3 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 0.75rem;
+	color: var(--color-primary);
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	margin-bottom: 1.25rem;
+}
+
+.skills__content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.75rem 1.25rem;
+}
+
+.skills__details {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+	padding: 0.5rem 0.6rem;
+	border-radius: 6px;
+	transition: var(--transition);
+	border: 1px solid transparent;
+}
+
+.skills__details::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 2px;
+	height: 100%;
+	background: var(--color-primary);
+	opacity: 0;
+	transition: opacity 400ms ease;
+}
+
+.skills__details:hover::before {
+	opacity: 1;
+}
+
+.skills__details:hover {
+	background: transparent;
+	border-color: var(--color-primary-variant);
+}
+
+.skills__details-icon {
+	margin-top: 4px;
+	color: var(--color-primary);
+	font-size: 0.9rem;
+}
+
+.skills__details h4 {
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: var(--color-white);
+	line-height: 1.2;
+	margin-bottom: 0.15rem;
+}
+
+.skills__details small {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 0.65rem;
+	letter-spacing: 0.1em;
+	color: var(--color-light);
+	text-transform: lowercase;
+}
+
+@media screen and (max-width: 1024px) {
+	.skills__container {
+		grid-template-columns: 1fr;
+	}
+
+	.skills__container > div {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.skills__container {
+		gap: 1rem;
+	}
+
+	.skills__container > div {
+		width: 100%;
+		padding: 1.5rem 1rem;
+	}
+
+	.skills__content {
+		grid-template-columns: 1fr;
+	}
+}
