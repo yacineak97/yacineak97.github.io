@@ -4,11 +4,19 @@ Portfolio personnel développé avec React, TypeScript et Vite.
 
 Ce projet présente mon profil, mes compétences, mes projets et un moyen de contact direct via formulaire.
 
-## Aperçu
+## Aperçu Desktop
 
 ![Portfolio Preview](./src/assets/portfolio.png)
 
-Le portfolio a été conçu avec une interface moderne, responsive et animée afin d’offrir une expérience utilisateur fluide sur desktop et mobile.
+Le portfolio a été conçu avec une interface moderne, responsive et animée afin d’offrir une expérience utilisateur fluide sur desktop.
+
+---
+
+## Aperçu Mobile
+
+![Portfolio Mobile Preview](./src/assets/portfolio-mobile.png)
+
+L’interface mobile est entièrement responsive avec une navigation optimisée pour les petits écrans.
 
 ## Fonctionnalités
 
