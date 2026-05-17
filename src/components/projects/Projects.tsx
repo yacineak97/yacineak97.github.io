@@ -1,5 +1,6 @@
 import './projects.css';
 import WIKISEARCH from '../../assets/wikisearch.png';
+import PORTFOLIO from '../../assets/portfolio.png';
 
 const Projects = () => {
 	return (
@@ -32,7 +33,7 @@ const Projects = () => {
 				<article className='portfolio__item'>
 					<span className='card__bar' />
 					<div className='portfolio__item-image'>
-						<img src={WIKISEARCH} alt='Wikipedia search engine' />
+						<img src={PORTFOLIO} alt='My Portfolio' />
 					</div>
 
 					<h3>My Portfolio</h3>
