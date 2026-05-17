@@ -1,73 +1,83 @@
-# React + TypeScript + Vite
+# Portfolio Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel développé avec React, TypeScript et Vite.
 
-Currently, two official plugins are available:
+Ce projet présente mon profil, mes compétences, mes projets et un moyen de contact direct via formulaire.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Aperçu
 
-## React Compiler
+![Portfolio Preview](./src/assets/portfolio.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Le portfolio a été conçu avec une interface moderne, responsive et animée afin d’offrir une expérience utilisateur fluide sur desktop et mobile.
 
-## Expanding the ESLint configuration
+## Fonctionnalités
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Présentation personnelle
+- Section projets
+- Téléchargement du CV
+- Interface responsive
+- Animations et transitions
+- Formulaire de contact
+- Design moderne et minimaliste
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Technologies utilisées
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React
+- TypeScript
+- Vite
+- CSS
+- EmailJS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Installation
+
+Cloner le projet :
+
+```bash
+git clone git@github.com:yacineak97/portfolio.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Accéder au dossier :
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd portfolio
 ```
+
+Installer les dépendances :
+
+```bash
+npm install
+```
+
+Lancer le serveur de développement :
+
+```bash
+npm run dev
+```
+
+## Build production
+
+```bash
+npm run build
+```
+
+## Déploiement
+
+Le projet peut être déployé facilement avec GitHub Pages, Vercel ou Netlify.
+
+## Structure du projet
+
+```bash
+src/
+ ├── assets/
+ ├── components/
+ ├── App.tsx
+ └── main.tsx
+```
+
+## Objectif du projet
+
+Ce portfolio a été réalisé afin de mettre en avant mes compétences en développement front-end et ma capacité à créer des interfaces modernes et responsives.
+
+## Auteur
+
+Yacine Akli
