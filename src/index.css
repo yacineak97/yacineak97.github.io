@@ -133,7 +133,7 @@ a:hover {
 
 .btn-secondary {
 	background: none;
-	color: var(var(--color-accent-2));
+	color: var(--color-accent-2);
 }
 
 img {
