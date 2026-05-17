@@ -218,6 +218,19 @@
 	right: 0;
 }
 
+#experience h5 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 10px;
+	color: var(--color-light);
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	margin-bottom: 0.4rem;
+}
+
+#experience h5::before {
+	content: '// ';
+}
+
 @media screen and (max-width: 1450px) {
 	.experience__top {
 		flex-direction: column;

@@ -58,6 +58,19 @@
 	opacity: 1;
 }
 
+#projects h5 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 10px;
+	color: var(--color-light);
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	margin-bottom: 0.4rem;
+}
+
+#projects h5::before {
+	content: '// ';
+}
+
 @media screen and (max-width: 1024px) {
 	.portfolio__container {
 		grid-template-columns: 1fr 1fr;

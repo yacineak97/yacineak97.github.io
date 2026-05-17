@@ -53,6 +53,19 @@ textarea {
 	color: var(--color-white);
 }
 
+#contact h5 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 10px;
+	color: var(--color-light);
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	margin-bottom: 0.4rem;
+}
+
+#contact h5::before {
+	content: '// ';
+}
+
 @media screen and (max-width: 1024px) {
 	.container.contact__container {
 		grid-template-columns: 1fr;

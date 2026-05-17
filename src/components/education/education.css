@@ -222,6 +222,19 @@
 	right: 0;
 }
 
+#education h5 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 10px;
+	color: var(--color-light);
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	margin-bottom: 0.4rem;
+}
+
+#education h5::before {
+	content: '// ';
+}
+
 @media screen and (max-width: 1450px) {
 	.education__top {
 		flex-direction: column;
