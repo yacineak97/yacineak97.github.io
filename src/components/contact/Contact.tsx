@@ -14,6 +14,11 @@ const Contact = () => {
 
 		if (!form.current) return;
 
+		console.log('EMAILJS KEY:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
+		console.log('EMAILJS KEY:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+		console.log('EMAILJS KEY:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+		console.log('EMAILJS KEY:', import.meta.env);
+
 		emailjs
 			.sendForm(
 				import.meta.env.VITE_EMAILJS_SERVICE_ID,
