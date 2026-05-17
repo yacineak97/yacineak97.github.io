@@ -16,10 +16,10 @@ const Contact = () => {
 
 		emailjs
 			.sendForm(
-				import.meta.env.VITE_EMAILJS_SERVICE_ID,
-				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+				'service_xvmvptj',
+				'template_4dw5m9b',
 				form.current,
-				import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+				'pSfJVDNwkKiWbXaSA',
 			)
 			.then(() => {
 				toast.success('Message sent successfully!', { id: loading });
