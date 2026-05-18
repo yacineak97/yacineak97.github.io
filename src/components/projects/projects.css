@@ -12,6 +12,9 @@
 	transition: var(--transition);
 	position: relative;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 .portfolio__item:hover {
@@ -35,9 +38,10 @@
 .portfolio__item-cta {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
 	gap: 1rem;
+	margin-top: auto;
+	padding-top: 2rem;
+	margin-bottom: 1rem;
 }
 
 .portfolio__item .card__bar {

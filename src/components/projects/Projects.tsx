@@ -1,6 +1,7 @@
 import './projects.css';
 import WIKISEARCH from '../../assets/wikisearch.png';
 import PORTFOLIO from '../../assets/portfolio.png';
+import neo4jVsPostgres from '../../assets/neo4j-vs-postgres.png';
 
 const Projects = () => {
 	return (
@@ -57,6 +58,29 @@ const Projects = () => {
 							className='btn btn-primary'
 						>
 							Visit Website
+						</a>
+					</div>
+				</article>
+				<article className='portfolio__item'>
+					<span className='card__bar' />
+					<div className='portfolio__item-image'>
+						<img src={neo4jVsPostgres} alt='Neo4j vs PostgreSQL' />
+					</div>
+
+					<h3>
+						Implementation and Comparison of Neo4j vs PostgreSQL on Netflix Data
+					</h3>
+
+					<small className='text-light'>Neo4j | PostgreSQL</small>
+
+					<div className='portfolio__item-cta'>
+						<a
+							href='https://github.com/yacineak97/neo4j-project'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='btn'
+						>
+							GitHub
 						</a>
 					</div>
 				</article>
