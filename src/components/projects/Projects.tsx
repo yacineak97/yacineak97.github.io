@@ -1,7 +1,8 @@
 import './projects.css';
 import WIKISEARCH from '../../assets/wikisearch.png';
 import PORTFOLIO from '../../assets/portfolio.png';
-import neo4jVsPostgres from '../../assets/neo4j-vs-postgres.png';
+import NEO4JVSPOSTGRES from '../../assets/neo4j-vs-postgres.png';
+import P2P from '../../assets/p2p.png';
 
 const Projects = () => {
 	return (
@@ -23,6 +24,30 @@ const Projects = () => {
 					<div className='portfolio__item-cta'>
 						<a
 							href='https://github.com/yacineak97/wikipedia-search-engine'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='btn'
+						>
+							GitHub
+						</a>
+					</div>
+				</article>
+				<article className='portfolio__item'>
+					<span className='card__bar' />
+					<div className='portfolio__item-image'>
+						<img
+							src={P2P}
+							alt='Peer-to-Peer Merkle Tree Synchronization System'
+						/>
+					</div>
+
+					<h3>Peer-to-Peer Merkle Tree Synchronization System</h3>
+
+					<small className='text-light'>GOLANG</small>
+
+					<div className='portfolio__item-cta'>
+						<a
+							href='https://github.com/yacineak97/peer_to_peer'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='btn'
@@ -64,7 +89,7 @@ const Projects = () => {
 				<article className='portfolio__item'>
 					<span className='card__bar' />
 					<div className='portfolio__item-image'>
-						<img src={neo4jVsPostgres} alt='Neo4j vs PostgreSQL' />
+						<img src={NEO4JVSPOSTGRES} alt='Neo4j vs PostgreSQL' />
 					</div>
 
 					<h3>
