@@ -29,6 +29,7 @@
 .portfolio__item-image {
 	border-radius: 1.5rem;
 	overflow: hidden;
+	cursor: zoom-in;
 }
 
 .portfolio__item h3 {
@@ -75,6 +76,108 @@
 	content: '// ';
 }
 
+.portfolio__item-image img {
+	width: 100%;
+	display: block;
+	transition:
+		transform 300ms ease,
+		filter 300ms ease;
+}
+
+.portfolio__item-image:hover img {
+	transform: scale(1.04);
+	filter: brightness(0.85);
+}
+
+.image-preview {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	background: rgba(5, 8, 20, 0.9);
+	backdrop-filter: blur(12px);
+	animation: previewFade 200ms ease;
+}
+
+.image-preview__content {
+	max-width: min(1100px, 95vw);
+	max-height: 90vh;
+	padding: 1rem;
+	border-radius: 1.5rem;
+	background: rgba(20, 24, 45, 0.9);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	box-shadow:
+		0 0 30px rgba(57, 232, 122, 0.18),
+		0 25px 80px rgba(0, 0, 0, 0.5);
+	animation: previewScale 220ms ease;
+}
+
+.image-preview__content img {
+	width: 100%;
+	max-height: 76vh;
+	object-fit: contain;
+	display: block;
+	border-radius: 1rem;
+}
+
+.image-preview__content p {
+	margin-top: 0.8rem;
+	text-align: center;
+	color: var(--color-white);
+	font-size: 0.95rem;
+}
+
+.image-preview__close {
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: white;
+	font-size: 2.2rem;
+	line-height: 1;
+	cursor: pointer;
+	transition:
+		background 200ms ease,
+		transform 200ms ease;
+}
+
+.image-preview__close:hover {
+	background: rgba(57, 232, 122, 0.25);
+	transform: scale(1.05);
+}
+
+@keyframes previewFade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes previewScale {
+	from {
+		opacity: 0;
+		transform: scale(0.94);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	.portfolio__container {
 		grid-template-columns: 1fr 1fr;
@@ -86,5 +189,21 @@
 	.portfolio__container {
 		grid-template-columns: 1fr;
 		gap: 1rem;
+	}
+
+	.image-preview {
+		padding: 1rem;
+	}
+
+	.image-preview__content {
+		padding: 0.7rem;
+	}
+
+	.image-preview__close {
+		top: 1rem;
+		right: 1rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: 1.8rem;
 	}
 }
