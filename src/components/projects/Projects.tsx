@@ -119,13 +119,13 @@ const Projects = () => {
 					</div>
 
 					<h3>
-						STAYBIT — DISTRIBUTED HOTEL BOOKING SYSTEM · NESTJS MICROSERVICES ·
-						GRAPHQL FEDERATION · AWS EKS
+						Staybit — Distributed Hotel Booking System · NestJS Microservices ·
+						GraphQL Federation · AWS EKS
 					</h3>
 
 					<small className='text-light'>
-						NestJS | GraphQL Federation | Microservices | PostgreSQL | Stripe |
-						JWT | Docker | Kubernetes | AWS EKS | CI/CD | TypeScript | Jest
+						NESTJS | GRAPHQL FEDERATION | MICROSERVICES | POSTGRESQL | STRIPE |
+						JWT | DOCKER | KUBERNETES | AWS EKS | CI/CD | TYPESCRIPT | JEST
 					</small>
 
 					<div className='portfolio__item-cta'>
