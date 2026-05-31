@@ -226,14 +226,14 @@ const Projects = () => {
 						onClick={() =>
 							setPreviewImage({
 								src: PORTFOLIO,
-								alt: 'My Portfolio',
+								alt: 'My Developer Portfolio',
 							})
 						}
 					>
-						<img src={PORTFOLIO} alt='My Portfolio' />
+						<img src={PORTFOLIO} alt='My Developer Portfolio' />
 					</div>
 
-					<h3>My Portfolio</h3>
+					<h3>My Developer Portfolio</h3>
 
 					<small className='text-light'>REACT.JS | TYPESCRIPT | CSS</small>
 
