@@ -119,8 +119,8 @@ const Projects = () => {
 					</div>
 
 					<h3>
-						Staybit — Distributed Hotel Booking System · NestJS Microservices ·
-						GraphQL Federation · AWS EKS
+						STAYBIT — DISTRIBUTED HOTEL BOOKING SYSTEM · NESTJS MICROSERVICES ·
+						GRAPHQL FEDERATION · AWS EKS
 					</h3>
 
 					<small className='text-light'>
