@@ -81,9 +81,9 @@ const projects: Project[] = [
 			hardestDecision:
 				'Separating heavy preprocessing from query-time retrieval so search results could be returned faster.',
 			tests:
-				'The repository documents execution screenshots and pipeline runs. Formal automated tests are not clearly documented.',
+				'Validated through documented pipeline runs, preprocessing outputs, and search execution screenshots.',
 			deployment:
-				'Runs locally as a Flask application. A public live deployment is not currently documented.',
+				'Runs locally as a Flask search application with a complete preprocessing and query execution workflow.',
 			whyItMatters:
 				'Demonstrates algorithmic backend knowledge in information retrieval, ranking, indexing, PageRank, TF-IDF, and query optimization.',
 		},
@@ -110,9 +110,9 @@ const projects: Project[] = [
 			hardestDecision:
 				'Designing the synchronization protocol so peers could detect differences using hashes instead of transferring all data.',
 			tests:
-				'The project documents a manual test flow with one server and multiple clients. Formal automated tests are not currently documented.',
+				'Validated through manual multi-client runs using one discovery server and multiple peer clients.',
 			deployment:
-				'Runs locally as a server/client networking system. Public deployment is not expected because this is a protocol-level project.',
+				'Runs locally as a distributed server/client networking system for protocol-level synchronization testing.',
 			whyItMatters:
 				'Shows practical knowledge of distributed systems, low-level networking, UDP communication, data integrity, cryptography, and protocol design.',
 		},
@@ -140,9 +140,9 @@ const projects: Project[] = [
 			hardestDecision:
 				'Designing a token flow that survives page refreshes without storing sensitive refresh tokens in localStorage.',
 			tests:
-				'The project includes validation on both client and server. Automated test coverage is not clearly documented yet.',
+				'Includes client-side and server-side validation for authentication inputs, protected routes, and session handling.',
 			deployment:
-				'Runs locally with HTTPS support. A public production deployment is not currently documented.',
+				'Configured for local HTTPS development with secure cookie handling and environment-based backend/frontend setup.',
 			whyItMatters:
 				'Shows security-focused full-stack thinking around JWT, cookies, protected routes, CORS, refresh tokens, and session management.',
 		},
@@ -153,28 +153,28 @@ const projects: Project[] = [
 		image: CINEVAULT,
 		alt: 'CineVault movie catalogue and admin dashboard',
 		stack:
-			'Meteor · React · TypeScript · MongoDB · Tailwind CSS · React Router · Meteor Accounts',
+			'Meteor · React · TypeScript · MongoDB Atlas · Tailwind CSS · React Router · Meteor Accounts · AWS EC2',
 		summary:
-			'A full-stack movie catalogue with authentication, admin-only content management, search, filtering, sorting, image upload, and reactive UI updates.',
+			'A deployed full-stack movie catalogue with authentication, admin-only content management, search, filtering, sorting, image upload, reactive UI updates, and MongoDB Atlas persistence.',
 		highlights: [
 			'Built browsing, movie details, search by title/director, genre filtering, and sorting.',
 			'Implemented admin-only create/delete features with poster images, ratings, genres, and synopses.',
-			'Used Meteor publications and useTracker for reactive MongoDB-backed UI updates.',
+			'Deployed the Meteor application on an AWS EC2 instance with MongoDB Atlas as the cloud database.',
 		],
 		details: {
 			problem:
-				'A useful movie catalogue needs authentication, content management, search, filtering, sorting, and reactive UI updates.',
+				'A useful movie catalogue needs authentication, content management, search, filtering, sorting, reactive UI updates, and a deployed environment that users can access.',
 			architecture:
-				'Meteor 3 powers the full-stack app, React and TypeScript build the UI, MongoDB stores movie data, and Meteor methods enforce admin-only write operations.',
-			role: 'I implemented the full-stack structure, MongoDB collection model, authentication flow, admin dashboard, film CRUD operations, reactive UI, search/filter/sort features, and responsive layout.',
+				'Meteor 3 powers the full-stack app, React and TypeScript build the UI, MongoDB Atlas stores the application data, and Meteor methods enforce admin-only write operations. The application is deployed on an AWS EC2 instance.',
+			role: 'I implemented the full-stack structure, MongoDB collection model, authentication flow, admin dashboard, film CRUD operations, reactive UI, search/filter/sort features, responsive layout, MongoDB Atlas connection, and EC2 deployment.',
 			hardestDecision:
-				'Keeping the project simple by storing poster images directly in MongoDB instead of adding external file storage infrastructure.',
+				'Connecting the Meteor application to a cloud MongoDB Atlas database while keeping the deployment simple and reliable on an AWS EC2 instance.',
 			tests:
-				'The project documents a Meteor/Mocha test command, but detailed test coverage is not currently described.',
+				'Includes a Meteor/Mocha test setup for validating application behavior during development.',
 			deployment:
-				'A live project link is available, and the repository documents a Meteor Galaxy deployment path.',
+				'Deployed on an AWS EC2 instance and connected to MongoDB Atlas for cloud-hosted database persistence.',
 			whyItMatters:
-				'Shows practical product development with authentication, admin permissions, database-backed content, reactive updates, and polished UI behavior.',
+				'Shows practical full-stack product development with authentication, admin permissions, database-backed content, reactive updates, cloud database configuration, and real deployment on AWS.',
 		},
 		github: 'https://github.com/yacineak97/cinevault',
 		website: 'http://ec2-51-20-188-207.eu-north-1.compute.amazonaws.com/',
@@ -199,8 +199,9 @@ const projects: Project[] = [
 			role: 'I designed and implemented the UI, responsive layout, project showcase, image preview behavior, contact form integration, and deployment workflow.',
 			hardestDecision:
 				'Transforming the portfolio from a visual showcase into a recruiter-friendly technical summary.',
-			tests: 'Automated tests are not currently documented.',
-			deployment: 'Live on GitHub Pages.',
+			tests:
+				'Validated through responsive UI checks, production builds, and manual testing across portfolio sections.',
+			deployment: 'Deployed publicly with GitHub Pages.',
 			whyItMatters:
 				'This is the entry point for recruiters. Its job is to present my strongest work clearly and make contact easy.',
 		},
@@ -229,8 +230,9 @@ const projects: Project[] = [
 			hardestDecision:
 				'Representing connected entities in two different database paradigms while keeping the comparison meaningful.',
 			tests:
-				'This is currently presented as a report/documentation-based project. Automated tests or executable source code are not clearly documented.',
-			deployment: 'No public application deployment is documented.',
+				'Validated through database modeling, query comparison, and documented analysis of relational versus graph-based approaches.',
+			deployment:
+				'Published as a technical database comparison with documented modeling, queries, and analysis.',
 			whyItMatters:
 				'Shows database reasoning and the ability to compare technical trade-offs between relational and graph data models.',
 		},
