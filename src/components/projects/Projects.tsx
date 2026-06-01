@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import './projects.css';
 
-import WIKISEARCH from '../../assets/wikisearch.png';
-import PORTFOLIO from '../../assets/portfolio.png';
-import NEO4JVSPOSTGRES from '../../assets/neo4j-vs-postgres.png';
-import STAYBIT from '../../assets/staybit.png';
-import AUTHVAULT from '../../assets/authvault.png';
-import CINEVAULT from '../../assets/cinevault.png';
-import P2P from '../../assets/p2p.png';
+import WIKISEARCH from '../../assets/wikisearch.webp';
+import PORTFOLIO from '../../assets/portfolio.webp';
+import NEO4JVSPOSTGRES from '../../assets/neo4j-vs-postgres.webp';
+import STAYBIT from '../../assets/staybit.webp';
+import AUTHVAULT from '../../assets/authvault.webp';
+import CINEVAULT from '../../assets/cinevault.webp';
+import P2P from '../../assets/p2p.webp';
 
 type Project = {
 	title: string;

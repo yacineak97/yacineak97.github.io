@@ -6,7 +6,7 @@ Ce projet présente mon profil, mes compétences, mes projets et un moyen de con
 
 ## Aperçu Desktop
 
-![Portfolio Preview](./src/assets/portfolio.png)
+![Portfolio Preview](./src/assets/portfolio.webp)
 
 Le portfolio a été conçu avec une interface moderne, responsive et animée afin d’offrir une expérience utilisateur fluide sur desktop.
 
@@ -14,7 +14,7 @@ Le portfolio a été conçu avec une interface moderne, responsive et animée af
 
 ## Aperçu Mobile
 
-![Portfolio Mobile Preview](./src/assets/portfolio-mobile.png)
+![Portfolio Mobile Preview](./src/assets/portfolio-mobile.webp)
 
 L’interface mobile est entièrement responsive avec une navigation optimisée pour les petits écrans.
 

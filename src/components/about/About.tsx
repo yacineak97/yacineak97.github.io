@@ -1,5 +1,5 @@
 import './about.css';
-import myPicture from '../../assets/my-picture2.jpg';
+import myPicture from '../../assets/my-picture2.webp';
 import { GiComputing, GiServerRack } from 'react-icons/gi';
 import { BsLightning } from 'react-icons/bs';
 

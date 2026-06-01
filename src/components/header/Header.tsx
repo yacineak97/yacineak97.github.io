@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './header.css';
 import CTA from './CTA';
-import myPicture from '../../assets/my-picture.png';
+import myPicture from '../../assets/my-picture.webp';
 import HeaderSocials from './HeaderSocials';
 
 const useTypewriter = (text: string, speed = 60, startDelay = 0) => {
