@@ -35,7 +35,11 @@ const useTypewriter = (text: string, speed = 60, startDelay = 0) => {
 
 const Header = () => {
 	const name = useTypewriter('Yacine Akli', 80, 300);
-	const role = useTypewriter('Full-Stack Software Engineer', 45, 1200);
+	const role = useTypewriter(
+		'Full-Stack TypeScript Engineer — Node.js/NestJS, React & Angular',
+		45,
+		1200,
+	);
 
 	return (
 		<header id='home'>

@@ -42,15 +42,21 @@ const About = () => {
 					</div>
 
 					<p className='about__text'>
-						I am a <b>Full-Stack Software Engineer</b> passionate about building
-						scalable, performant, and secure web applications. I work primarily
-						with technologies such as
-						<b> Node.js (Nest.js, Express.js), React.js, Angular, and Python</b>
-						, and I enjoy adapting quickly to new tools and environments. <br />
-						<br />I am a collaborative and results-driven developer who focuses
-						on writing clean, maintainable code and delivering meaningful user
-						experiences. I enjoy working on complex systems and continuously
-						improving my technical and problem-solving skills.
+						I am a <b>Full-Stack TypeScript Engineer</b> focused on building
+						scalable, secure, and maintainable web applications. I work
+						primarily with technologies such as
+						<b>
+							{' '}
+							TypeScript, Node.js, NestJS, Express.js, React, Angular, and
+							Python
+						</b>
+						, with experience developing REST and GraphQL APIs, authentication
+						systems, and database-driven applications. <br />
+						<br />I work across both backend and frontend, from designing
+						reliable server-side architectures to building responsive user
+						interfaces. I am a collaborative developer who values clean code,
+						practical problem-solving, and delivering applications that are
+						performant, useful, and easy to maintain.
 					</p>
 				</div>
 			</div>
