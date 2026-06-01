@@ -61,36 +61,6 @@ const projects: Project[] = [
 		github: 'https://github.com/yacineak97/staybit',
 	},
 	{
-		title: 'AuthVault — Secure JWT Authentication Platform',
-		image: AUTHVAULT,
-		alt: 'AuthVault secure JWT authentication platform',
-		stack:
-			'Go · Gin · React · TypeScript · PostgreSQL · JWT · HttpOnly Cookies · React Router',
-		summary:
-			'A full-stack authentication system focused on secure session handling with short-lived access tokens, HttpOnly refresh cookies, protected routes, and silent refresh.',
-		highlights: [
-			'Built registration, login, logout, protected routes, persistent sessions, and silent refresh.',
-			'Stored access tokens in memory and refresh tokens in secure HttpOnly cookies.',
-			'Implemented bcrypt hashing, CORS handling, backend validation, and frontend auth context.',
-		],
-		details: {
-			problem:
-				'Many authentication demos store tokens insecurely or only implement a basic login flow. This project focuses on a more realistic authentication pattern.',
-			architecture:
-				'The Go/Gin backend issues short-lived JWT access tokens and refresh tokens stored in HttpOnly cookies. The React frontend keeps access tokens in memory and uses Axios interceptors to refresh sessions automatically.',
-			role: 'I implemented the backend API, JWT generation and validation, password hashing, secure cookie handling, React auth context, protected routes, and silent refresh flow.',
-			hardestDecision:
-				'Designing a token flow that survives page refreshes without storing sensitive refresh tokens in localStorage.',
-			tests:
-				'The project includes validation on both client and server. Automated test coverage is not clearly documented yet.',
-			deployment:
-				'Runs locally with HTTPS support. A public production deployment is not currently documented.',
-			whyItMatters:
-				'Shows security-focused full-stack thinking around JWT, cookies, protected routes, CORS, refresh tokens, and session management.',
-		},
-		github: 'https://github.com/yacineak97/AuthVault',
-	},
-	{
 		title: 'Wikipedia Search Engine',
 		image: WIKISEARCH,
 		alt: 'Wikipedia search engine',
@@ -149,6 +119,36 @@ const projects: Project[] = [
 		github: 'https://github.com/yacineak97/peer_to_peer',
 	},
 	{
+		title: 'AuthVault — Secure JWT Authentication Platform',
+		image: AUTHVAULT,
+		alt: 'AuthVault secure JWT authentication platform',
+		stack:
+			'Go · Gin · React · TypeScript · PostgreSQL · JWT · HttpOnly Cookies · React Router',
+		summary:
+			'A full-stack authentication system focused on secure session handling with short-lived access tokens, HttpOnly refresh cookies, protected routes, and silent refresh.',
+		highlights: [
+			'Built registration, login, logout, protected routes, persistent sessions, and silent refresh.',
+			'Stored access tokens in memory and refresh tokens in secure HttpOnly cookies.',
+			'Implemented bcrypt hashing, CORS handling, backend validation, and frontend auth context.',
+		],
+		details: {
+			problem:
+				'Many authentication demos store tokens insecurely or only implement a basic login flow. This project focuses on a more realistic authentication pattern.',
+			architecture:
+				'The Go/Gin backend issues short-lived JWT access tokens and refresh tokens stored in HttpOnly cookies. The React frontend keeps access tokens in memory and uses Axios interceptors to refresh sessions automatically.',
+			role: 'I implemented the backend API, JWT generation and validation, password hashing, secure cookie handling, React auth context, protected routes, and silent refresh flow.',
+			hardestDecision:
+				'Designing a token flow that survives page refreshes without storing sensitive refresh tokens in localStorage.',
+			tests:
+				'The project includes validation on both client and server. Automated test coverage is not clearly documented yet.',
+			deployment:
+				'Runs locally with HTTPS support. A public production deployment is not currently documented.',
+			whyItMatters:
+				'Shows security-focused full-stack thinking around JWT, cookies, protected routes, CORS, refresh tokens, and session management.',
+		},
+		github: 'https://github.com/yacineak97/AuthVault',
+	},
+	{
 		title: 'CineVault — Movie Catalogue & Admin Dashboard',
 		image: CINEVAULT,
 		alt: 'CineVault movie catalogue and admin dashboard',
@@ -177,7 +177,7 @@ const projects: Project[] = [
 				'Shows practical product development with authentication, admin permissions, database-backed content, reactive updates, and polished UI behavior.',
 		},
 		github: 'https://github.com/yacineak97/cinevault',
-		website: 'http://51.20.188.207',
+		website: 'http://ec2-51-20-188-207.eu-north-1.compute.amazonaws.com/',
 	},
 	{
 		title: 'Developer Portfolio',
