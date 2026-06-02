@@ -50,8 +50,8 @@ const Education = () => {
 								</div>
 								<div>
 									<h3>
-										State Engineer in Telecommunications — Computer Science &
-										Networks Option
+										Engineering Degree in Telecommunications — Computer Science
+										& Networks Option
 									</h3>
 									<h5>
 										National Higher School of Telecommunications and Information
