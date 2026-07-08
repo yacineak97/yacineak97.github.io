@@ -45,12 +45,11 @@ const Experience = () => {
 								consumption reduction.
 							</li>
 							<li>
-								Built scalable backend services in Python and C# for critical
+								Built scalable backend services in Python for critical
 								endpoints.
 							</li>
 							<li>
-								Developed real-time collaborative apps with Meteor.js and
-								reactive features.
+								Developed real-time collaborative apps with reactive features.
 							</li>
 							<li>
 								Automated CI/CD pipelines on GitLab/Azure — cut deployment time
@@ -64,8 +63,8 @@ const Experience = () => {
 								Agile/Scrum: sprint planning, daily standups, and code reviews.
 							</li>
 							<li>
-								Stack: Node.js, Angular, TypeScript, MongoDB, Python, GitLab
-								CI/CD, Auth0, Azure.
+								Stack: Node.js, Angular, JavaScript/TypeScript, MongoDB, Python,
+								Bash scripting, GitLab CI/CD, Auth0, Azure.
 							</li>
 						</ul>
 					</article>

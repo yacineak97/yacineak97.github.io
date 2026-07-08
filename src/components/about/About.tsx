@@ -21,7 +21,7 @@ const About = () => {
 						<article className='about__card'>
 							<GiComputing className='about__icon' />
 							<h5>Full-Stack Development</h5>
-							<small>Node.js • React.js • Angular • Python</small>
+							<small>Node.js • React • Angular • Python</small>
 						</article>
 
 						<article className='about__card'>
