@@ -63,8 +63,8 @@ const Experience = () => {
 								Agile/Scrum: sprint planning, daily standups, and code reviews.
 							</li>
 							<li>
-								Stack: Node.js, Angular, JavaScript/TypeScript, MongoDB, Python,
-								Bash scripting, GitLab CI/CD, Auth0, Azure.
+								Stack: Node.js, Angular, TypeScript, MongoDB, Python, Bash
+								scripting, GitLab CI/CD, Auth0, Azure.
 							</li>
 						</ul>
 					</article>
